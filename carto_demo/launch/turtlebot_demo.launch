@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Gazebo with husky -->
+  <include file="$(find carto_sim)/launch/turtlebot3_sim.launch"/>
+  
+  <!-- RViZ -->
+  <include file="$(find carto_viz)/launch/mapping.launch"/>
+  
+  <!-- Cartographer -->
+  <include file="$(find carto_mapping)/launch/turtlebot3_slam.launch"/>
+  
+</launch>
